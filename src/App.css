@@ -146,6 +146,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255, 0, 200, 0.3);
   transition: transform 0.3s ease-in-out;
+  
 }
 
 .gallery-images img:hover {
@@ -161,91 +162,22 @@ body {
   color: #888;
 }
 
-/* ESTILOS PARA LA SECCIÓN DE HISTORIA */
-.story-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.story-chapter {
+.gallery-images {
   display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.instrumento {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 60px 0;
-  gap: 30px;
 }
 
-.story-chapter.reverse {
-  flex-direction: row-reverse;
-}
-
-.story-icon {
-  font-size: 80px;
-  min-width: 120px;
-  text-align: center;
-  filter: drop-shadow(0 0 15px #ff55dd);
-}
-
-.story-content {
-  flex: 1;
-  background: rgba(255, 85, 221, 0.1);
-  padding: 25px;
-  border-radius: 15px;
-  border: 2px solid rgba(255, 85, 221, 0.3);
-  backdrop-filter: blur(10px);
-}
-
-.story-content h3 {
-  color: #ff99ff;
-  font-size: 24px;
-  margin-bottom: 15px;
-  text-shadow: 0 0 10px #ff55dd;
-}
-
-.story-content p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ddd;
-}
-
-.story-finale {
-  text-align: center;
-  margin-top: 80px;
-}
-
-.finale-glow {
-  display: inline-block;
-  padding: 20px 40px;
-  border-radius: 20px;
-  background: rgba(255, 85, 221, 0.2);
-  border: 2px solid #ff55dd;
-}
-
-.finale-glow h3 {
-  color: #ffccff;
-  font-size: 22px;
-  margin: 0;
-  text-shadow: 0 0 15px #ff55dd;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .story-chapter,
-  .story-chapter.reverse {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .story-icon {
-    font-size: 60px;
-    min-width: auto;
-  }
-  
-  .story-content {
-    padding: 20px;
-  }
-  
-  .story-content h3 {
-    font-size: 20px;
-  }
+.nombre-instrumento {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
 }
