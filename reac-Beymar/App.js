@@ -182,6 +182,9 @@ function App() {
         </div>
       </motion.section>
 
+
+      {/* FIN SECCIÓN DE HISTORIA */}
+
       <motion.section className="section download" id="download" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
         <h2>Descarga Chukuta Hero!</h2>
         <p>Versión alpha disponible para Windows:</p>
