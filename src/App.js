@@ -108,24 +108,60 @@ function App() {
         </ul>
       </motion.section>
 
-      <motion.section className="section faq" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
-        <h2>Preguntas Frecuentes (FAQ)</h2>
-        <p><strong>¿Es gratis?</strong> Sí, la versión inicial es gratuita.</p>
-        <p><strong>¿Habrá nuevos niveles?</strong> Sí, lanzaremos DLCs con nuevas canciones.</p>
-        <p><strong>¿Se puede jugar con joystick?</strong> Próximamente en una actualización.</p>
-      </motion.section>
+      <div style={{ display: "flex", justifyContent: "center", gap: "2rem", flexWrap: "wrap", margin: "2rem 0" }}>
+        <motion.section
+          className="section faq"
+          style={{ flex: "1 1 300px", minWidth: 280, maxWidth: 400 }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeIn}
+        >
+          <h2>Preguntas Frecuentes (FAQ)</h2>
+          <p><strong>¿Es gratis?</strong> Sí, la versión inicial es gratuita.</p>
+          <p><strong>¿Habrá nuevos niveles?</strong> Sí, lanzaremos DLCs con nuevas canciones.</p>
+          <p><strong>¿Se puede jugar con joystick?</strong> Próximamente en una actualización.</p>
+        </motion.section>
 
-      <motion.section className="section contact" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
-        <h2>Conéctate con Nosotros</h2>
-        <ul>
-          <li>📸 Instagram: @chukutahero</li>
-          <li>🐦 Twitter: @chukutahero</li>
-          <li>🎥 YouTube: Chukuta Hero Oficial</li>
-        </ul>
-      </motion.section>
+        <motion.section
+          className="section contact"
+          style={{ flex: "1 1 300px", minWidth: 280, maxWidth: 400 }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeIn}
+        >
+          <h2>Conéctate con Nosotros</h2>
+          <ul>
+            <li>📸 Instagram: @chukutahero</li>
+            <li>🐦 Twitter: @chukutahero</li>
+            <li>🎥 YouTube: Chukuta Hero Oficial</li>
+          </ul>
+        </motion.section>
+      </div>
 
-      <footer className="footer">
-        <p>© 2025 Chukuta Hero! Todos los derechos reservados.</p>
+      <footer className="footer" style={{ background: "#1a1a2e", color: "#fff", padding: "2rem 0", marginTop: "2rem" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
+          <h3 style={{ color: "#ff55dd", marginBottom: 8 }}>Equipo Los Papayes</h3>
+          <p style={{ fontSize: "1.1rem", marginBottom: 12 }}>
+            Desarrolladores apasionados, unidos por la música y la creatividad.<br />
+            Inspirados en <b>Guitar Hero</b> y <b>Clone Hero</b>, creamos <span style={{ color: "#ff55dd" }}>Chukuta Hero</span> para celebrar el ritmo y la cultura paceña.
+          </p>
+          <p style={{ fontSize: "1rem", color: "#aaa", marginBottom: 8 }}>
+            Proyecto iniciado y finalizado en 2025.<br />
+            ¡Gracias por ser parte de esta aventura musical!
+          </p>
+          <div style={{ margin: "1rem 0" }}>
+            <span role="img" aria-label="guitar">🎸</span>
+            <span style={{ margin: "0 8px" }}>|</span>
+            <span role="img" aria-label="team">🤘</span>
+            <span style={{ margin: "0 8px" }}>|</span>
+            <span role="img" aria-label="bolivia">🇧🇴</span>
+          </div>
+          <p style={{ fontSize: "0.95rem", color: "#666" }}>
+            © 2025 Chukuta Hero! Todos los derechos reservados.
+          </p>
+        </div>
       </footer>
     </div>
   );
