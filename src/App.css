@@ -160,3 +160,73 @@ body {
   font-size: 14px;
   color: #888;
 }
+/* Añade esto a tu App.css */
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(20, 0, 30, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 15px 0;
+  border-bottom: 1px solid #ff55dd;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-brand {
+  color: #ffccff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 0 10px rgba(255, 85, 221, 0.7);
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.navbar-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.navbar-links a:hover {
+  color: #ff55dd;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff55dd;
+  transition: width 0.3s;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* Ajuste para que el hero no quede detrás del navbar */
+.hero-section {
+  margin-top: 70px;
+  height: calc(100vh - 70px);
+}
